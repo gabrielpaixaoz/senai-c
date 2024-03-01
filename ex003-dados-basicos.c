@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main(){
-//Declarando var·veis
+//Declarando var√°veis
 char sexo;
 char nome[200];
 int idade;
 float peso;
 
-//Solicitando dados para o usu·rio.
+//Solicitando dados para o usu√°rio.
 printf("Digite seu nome: ");
 scanf("%s",&nome);
 
@@ -24,7 +24,7 @@ scanf("%i",&idade);
 printf("Digite seu peso: ");
 scanf("%f",&peso);
 
-// Exibindo dados para o usu·rio.
+// Exibindo dados para o usu√°rio.
 
 printf("\n=== Exibindo dados === \n");
 printf("Nome: %s \n", nome); // string
