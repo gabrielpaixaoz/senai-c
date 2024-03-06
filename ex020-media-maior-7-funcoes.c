@@ -1,10 +1,18 @@
 #include <stdio.h>
 #include <string.h>
 #include <locale.h>
-#include <string.h>
 
 
-char* calcularMedia(float media){
+
+
+
+
+float calcularMedia(float n1, float n2){
+	return (n1 + n2) / 2;
+}
+
+
+char* mostrarResultado(float media){
 	char resposta[200];
 	if(media >= 7){
 		strcpy(resposta, "APROVADO!");
@@ -23,15 +31,16 @@ int main(){
 	
 	
 	
-	printf("Digite um número: ");
+	printf("Digite um nÃºmero: ");
 	scanf("%f",&primeiroNumero);
 	
-	printf("Digite outro número: ");
+	printf("Digite outro nÃºmero: ");
 	scanf("%f",&segundoNumero);
 	
-	media = (primeiroNumero + segundoNumero)/2;
+
+	media = calcularMedia(primeiroNumero, segundoNumero);
 	
-	strcpy(resultado,calcularMedia(media));
+	strcpy(resultado,mostrarResultado(media));
 	
 	printf("Media: %.1f. \n",media);
 	printf("Resultado: %s \n", resultado);
