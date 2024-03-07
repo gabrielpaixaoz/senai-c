@@ -10,7 +10,7 @@ int main(){
 	float nota, soma;
 	
 	for (i = 1; i <= 5;i++){
-		printf("Digite a %iª nota: ",i);
+		printf("Digite a %iÂª nota: ",i);
 		scanf("%f",&nota);
 		soma = soma + nota;
 	}
