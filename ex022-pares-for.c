@@ -9,7 +9,7 @@ int main(){
 
 	int i;
 	
-	printf("Tabuada de multiplicação do numero:");
+	printf("Tabuada de multiplicaÃ§Ã£o do numero:");
 	for(i = 100; i <= 120; i++){
 		if(i % 2 == 0){
 		printf("%d \n",i);
