@@ -10,7 +10,7 @@ int main(){
 	int i;
 	
 	for(i = 1; i <=4; i++){
-		printf("Digite a %iª Nota: ",i);
+		printf("Digite a %iÂª Nota: ",i);
 		scanf("%f",&nota);
 		soma = soma + nota;
 	}
@@ -18,7 +18,7 @@ int main(){
 	media = (soma)/4;
 	
 	
-	printf("\nMédia do aluno: %.2f \n", media);
+	printf("\nMÃ©dia do aluno: %.2f \n", media);
 	
 	return 0;
 	
