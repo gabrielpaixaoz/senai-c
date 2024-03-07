@@ -8,14 +8,14 @@ int main(){
 	
 	int numero;
 	
-	printf("Digite um número: ");
+	printf("Digite um nÃºmero: ");
 	scanf("%i",&numero);
 	
 	int i;
 	
-	printf("Tabuada de multiplicação do numero: %i",numero);
+	printf("Tabuada de multiplicaÃ§Ã£o do numero: %i",numero);
 	for(i = 1; i <= 10; i++){
-		printf("%i x %i = %i \n", 2, i, 2 *i);
+		printf("\n %i x %i = %i \n", numero, i, numero *i);
 	}
 	
 	return 0;
