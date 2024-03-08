@@ -16,7 +16,7 @@ do{
 	scanf("%f",&segundaNota);
 	
 	if(primeiraNota < 0 || primeiraNota > 10 || segundaNota < 0 || segundaNota > 10){
-		printf("Nota invalída.\n");
+		printf("Nota invalÃ­da.\n");
 	}
 	
 	fflush(stdin);
@@ -25,7 +25,7 @@ do{
 
 media = (primeiraNota + segundaNota)/2;
 
-printf("Média: %.1f",media);
+printf("MÃ©dia: %.1f",media);
 
 return 0;
 }
