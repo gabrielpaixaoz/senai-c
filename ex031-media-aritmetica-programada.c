@@ -18,7 +18,7 @@ do{
 	scanf("%c",&resposta);
 	
 	if(resposta != 'N'){
-		printf("Digite a %dª nota: ", qtdNotas + 1);
+		printf("Digite a %dÂª nota: ", qtdNotas + 1);
 		scanf("%f",&nota);
 		
 		soma = soma + nota;
@@ -27,7 +27,7 @@ do{
 	}}while(resposta != 'N');
 	media = soma / qtdNotas;
 		
-	printf("Média %.1f \n", media);
+	printf("MÃ©dia %.1f \n", media);
 
 	
 }
