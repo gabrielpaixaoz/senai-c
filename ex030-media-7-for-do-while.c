@@ -11,7 +11,7 @@ float nota, soma = 0,media;
 for(i = 1; i <= 3; i++){
 	do{
 		
-		printf("Digite a %dª nota: ",i);
+		printf("Digite a %dÂª nota: ",i);
 		scanf("%f",&nota);
 		
 	}while(nota < 0 || nota > 10);
@@ -23,7 +23,7 @@ media = (soma) / 3;
 
 if(media >= 5 && media <= 6.5){
 	
-	printf("RECUPERAÇÃO!");
+	printf("RECUPERAÃ‡ÃƒO!");
 	
 } else if(media >= 7){
 	
@@ -34,7 +34,7 @@ if(media >= 5 && media <= 6.5){
 	printf("REPROVADO!");
 }
 
-printf("\nMÉDIA: %.1f \n",media);
+printf("\nMÃ‰DIA: %.1f \n",media);
 
 return 0;
 }
