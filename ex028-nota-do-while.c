@@ -15,7 +15,7 @@ int main(){
 
 }while(notaAluno < 0 || notaAluno > 10);
 
-	printf("Sua nota é: %.1f", notaAluno);
+	printf("Sua nota Ã©: %.1f", notaAluno);
 	
 	return 0;
 	
