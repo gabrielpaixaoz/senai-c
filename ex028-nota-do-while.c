@@ -12,6 +12,10 @@ int main(){
 	printf("Qual a sua nota?: ");
 	scanf("%f",&notaAluno);
 	fflush(stdin);
+	
+	if(notaAluno < 0 || notaAluno > 10){
+		printf("Nota invalida.\n");
+	}
 
 }while(notaAluno < 0 || notaAluno > 10);
 
@@ -36,4 +40,3 @@ int main(){
 	return 0;
 	
 } */
-
