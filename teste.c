@@ -15,10 +15,11 @@ int main(){
 	
 	
 	do{
-		printf("Digite a %dª nota: ", qtdNotas + 1);
+		printf("Digite a %dÂª nota: ", qtdNotas + 1);
 		scanf("%f",&nota);
 		
 		if(nota < 0){
+			qtdNotas = qtdNotas - 1;
 			nota = 0;
 		}
 		
@@ -27,11 +28,10 @@ int main(){
 		
 	}while(nota > 0);
 	
-	qtdNotas = qtdNotas - 1;
 	
 	media = (soma)/qtdNotas;
 	
-	printf("Média: %.1f \n", media);
+	printf("MÃ©dia: %.1f \n", media);
 	printf("Quantidade de notas: %i \n", qtdNotas);
 	printf("Soma: %.1f \n", soma);
 
@@ -43,9 +43,8 @@ int main(){
 
 
 
-/*Construa um algoritmo que calcule a média artmética de vários valores inteiros positivos, inseritods pelo usuário.
+/*Construa um algoritmo que calcule a mÃ©dia artmÃ©tica de vÃ¡rios valores inteiros positivos, inseritods pelo usuÃ¡rio.
 
-o final da leitura aconterá quando for lido um valor negativo.
+o final da leitura aconterÃ¡ quando for lido um valor negativo.
 
-Mostre a média artmética dos números informados pelo usuário. */
-
+Mostre a mÃ©dia artmÃ©tica dos nÃºmeros informados pelo usuÃ¡rio. */
