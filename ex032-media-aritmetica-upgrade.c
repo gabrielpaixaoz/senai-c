@@ -48,3 +48,33 @@ int main(){
 o final da leitura aconterá quando for lido um valor negativo.
 
 Mostre a média artmética dos números informados pelo usuário. */
+
+
+int main(){int numero = 1, soma = 0, contador = 0;
+float media;
+
+while(numero >= 0){
+printf("Digite um numero: ");
+scanf("%i", &numero);
+
+if(numero >= 0){
+	soma = soma + numero;
+	contador = contador + 1;
+}
+}
+if(numero >= 0){
+	soma = soma + numero;
+	contador = contador + 1;
+	  }
+if(contador == 0){
+	printf("Nao foi informado um número positivo.");
+}else{
+	media = soma / contador;
+	printf("Media: %.1f \n", media);
+}
+
+return 0;
+	   
+
+	   
+	  }
