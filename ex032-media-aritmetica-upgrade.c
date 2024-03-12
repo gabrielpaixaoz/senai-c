@@ -47,7 +47,7 @@ int main(){
 
 o final da leitura aconterá quando for lido um valor negativo.
 
-Mostre a média artmética dos números informados pelo usuário. */
+Mostre a média artmética dos números informados pelo usuário. 
 
 
 int main(){int numero = 1, soma = 0, contador = 0;
@@ -77,4 +77,4 @@ return 0;
 	   
 
 	   
-	  }
+	  }*/
