@@ -34,7 +34,7 @@ int main(){
 	}
 	
 	if(qtdNotas == 0){
-		printf("Não foi informado um número acima de 0.");
+		printf("NÃ£o foi informado um nÃºmero acima de 0.");
 	}else{
 		qtdPar = qtdPar - 1;
 	
@@ -43,8 +43,8 @@ int main(){
 
 	printf("Quantidade de notas Par: %i \n",qtdPar);
 	printf("Quantidade de notas Impares: %i\n",qtdImpar);
-	printf("Média geral dos números pares: %.1f \n", mediaPar);
-	printf("Média geral dos números lidos: %.1f \n", mediaGeral);
+	printf("MÃ©dia geral dos nÃºmeros pares: %.1f \n", mediaPar);
+	printf("MÃ©dia geral dos nÃºmeros lidos: %.1f \n", mediaGeral);
 	}
 	
 	return 0;
@@ -55,10 +55,10 @@ int main(){
 
 
 
-/* Faça um algoritimo que leia uma quantidade não determianda de números inteiros e positivos.Calcule:
-a) quantidade de números pares e impares;
-B) média de valores pares
-c) média geral dos números lidos.
+/* FaÃ§a um algoritimo que leia uma quantidade nÃ£o determianda de nÃºmeros inteiros e positivos.Calcule:
+a) quantidade de nÃºmeros pares e impares;
+B) mÃ©dia de valores pares
+c) mÃ©dia geral dos nÃºmeros lidos.
 
-O número que encerrerá a letirua será o número zero.*/
+O nÃºmero que encerrerÃ¡ a letirua serÃ¡ o nÃºmero zero.*/
 
