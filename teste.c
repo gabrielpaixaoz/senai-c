@@ -13,14 +13,14 @@ int main(){
 	setlocale(LC_ALL, "");
 	
 	int idade = 1, qtdMA5000, qtdPessoa = 0, resposta = 0;
-	float salario, mediaGrupo = 0, somaGrupo;
+	float salario, mediaGrupo = 0, somaGrupo, salarioM;
 	char sexo;
 	
 	printf("1 OU 2?");
 	scanf("%i",&resposta);
 	
 		while(resposta == 1){
-		printf("Digite a idade da %d™ Pessoa: ",qtdPessoa + 1);
+		printf("Digite a idade da %d¬™ Pessoa: ",qtdPessoa + 1);
 		scanf("%i",&idade);
 		
 		fflush(stdin);
@@ -30,21 +30,31 @@ int main(){
 		
 		fflush(stdin);
 
-		printf("Sal·rio: ");
+		printf("Sal√°rio: ");
 		scanf("%f",&salario);
 		
 		if(idade > 0){
-			somaGrupo - somaGrupo + salario;
+			somaGrupo = somaGrupo + salario;
 			qtdPessoa = qtdPessoa + 1;
 		}
 		
+		if(sexo == 'M'){
+			salarioM = salarioM + salario;
+			
+		}
+		if(salarioM >= 5000){
+			qtdMA5000++;
+		}
+		
 		printf("1 OU 2?");
-	scanf("%i",&resposta);
+		scanf("%i",&resposta);
 		
 	}
-
 	
-		printf("media: %f",mediaGrupo);
+	mediaGrupo = (somaGrupo)/qtdPessoa;
+
+		printf()
+		printf("MEDIA DO GRUPO: R$%.2f",mediaGrupo);
 
 	}
 	
@@ -57,20 +67,19 @@ int main(){
 
 
 
-/*Foi feita uma pesquisa entre os habitantes de uma regi„o.
-Foram coletados os dados de idade,sexo(M/F) e sal·rio.
-faÁa um algoritmo que informe:
+/*Foi feita uma pesquisa entre os habitantes de uma regi√£o.
+Foram coletados os dados de idade,sexo(M/F) e sal√°rio.
+fa√ßa um algoritmo que informe:
 
-a) a mÈdia de sal·rio do grupo;
+a) a m√©dia de sal√°rio do grupo;
 b) maior e menor idade do grupo;
-c) quantidade de mulheres com sal·rio a partir de R$ 5.000,00.
+c) quantidade de mulheres com sal√°rio a partir de R$ 5.000,00.
 
-Crie um menu com duas opÁıes.
+Crie um menu com duas op√ß√µes.
 
-CÛdigo | DescriÁ„o
+C√≥digo | Descri√ß√£o
 1      | Adicionar pessoa
 2      | Exibir resultados e sair
 
-O final da leitura de dados se dar· com quando o usu·rio digitar o n˙mero cÛdigo 2. 
+O final da leitura de dados se dar√° com quando o usu√°rio digitar o n√∫mero c√≥digo 2. 
 */
-
