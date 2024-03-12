@@ -9,6 +9,92 @@
 #include <string.h>
 #include <locale.h>
 
+
+
+
+
+
+#include <stdio.h>
+#include <string.h>
+#include <locale.h>
+
+
+
+
+#include <stdio.h>
+#include <string.h>
+#include <locale.h>
+
+int main(){
+	setlocale(LC_ALL, "");
+	
+	int idade = 1, qtdMA5000 = 0, qtdPessoa = 0, resposta = 0, maiorIdade = 0, menorIdade = 999;
+	float salario, mediaGrupo = 0, somaGrupo, salarioM;
+	char sexo;
+	do{
+	printf("1 OU 2?");
+	scanf("%i",&resposta);
+	
+		
+		
+		
+		switch(resposta){
+			case 1:
+		printf("Digite a idade da %dª Pessoa: ",qtdPessoa + 1);
+		scanf("%i",&idade);
+		
+		fflush(stdin);
+		
+		printf("Sexo: ");
+		scanf("%c",&sexo);
+		
+		
+		sexo = toupper(sexo);
+		
+		fflush(stdin);
+
+		printf("Salário: ");
+		scanf("%f",&salario);
+		
+		somaGrupo += salario;
+		
+		qtdPessoa++;
+		
+		if(idade > maiorIdade){
+			maiorIdade = idade;
+		}
+		
+		if(idade < menorIdade){
+			menorIdade = idade;
+		}
+		
+		if(sexo == 'F' && salario >= 5000){
+			qtdMA5000++;
+		}
+
+	
+		break;
+		case 2:
+			
+		mediaGrupo = (somaGrupo)/qtdPessoa;
+		
+		
+		printf("Média do grupo:: R$%.2f \n",mediaGrupo);
+		printf("Maior idade do grupo: %i \n",maiorIdade);
+		printf("Menor idade do grupo: %i \n",menorIdade);
+		printf("Mulheres com salários maiores que 5 mil: %i \n",qtdMA5000);
+		break;
+		
+	default:
+		printf("Opção inválida.");
+}
+	}while (resposta != 2);
+
+		}
+	
+	
+
+/*
 int main(){
 	setlocale(LC_ALL, "");
 	
@@ -67,7 +153,7 @@ int main(){
 
 
 
-/*Foi feita uma pesquisa entre os habitantes de uma região.
+Foi feita uma pesquisa entre os habitantes de uma região.
 Foram coletados os dados de idade,sexo(M/F) e salário.
 faça um algoritmo que informe:
 
