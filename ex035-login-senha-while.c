@@ -13,7 +13,7 @@ int main(){
 	
 	
 	do{;	
-		printf("Digite o usu·rio: ");
+		printf("Digite o usu√°rio: ");
 		scanf("%s",&usuarioInserido);
 	
 		printf("Digite a senha: ");
