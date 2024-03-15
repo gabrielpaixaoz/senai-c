@@ -9,6 +9,7 @@ int main(){
 	
 
 	float media, soma = 0, numeros[4];
+	char resultado[200];
 	int i;
 	
 	
@@ -32,14 +33,14 @@ int main(){
 	
 	
 	if(media >= 7){
-		printf("Aprovado! \n");
+		strcpy(resultado,"Aprovado! \n");
 	}else if(media >= 5){
-		printf("Recuperação! \n");
+		strcpy(resultado,"Recuperação! \n");
 	}else{
-		printf("Rerovado! \n");
+		strcpy(resultado,"Reprovado! \n");
 	}
 
 
-
+	printf("Resultado: %s \n",resultado);
 	printf("MEDIA: %.1f",media);
 }
