@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <locale.h>
+#define SIZE 4
 
 
 int main(){
@@ -9,6 +10,9 @@ int main(){
 
 	float media, soma = 0, numeros[4];
 	int i;
+	
+	
+	
 	
 	
 	for(i = 0; i < 4; i++){
@@ -29,11 +33,12 @@ int main(){
 	
 	if(media >= 7){
 		printf("Aprovado! \n");
-	}else if(media <= 4.9){
-		printf("Reprovado! \n");
-	}else if(media >= 5 || media <=6.9){
+	}else if(media >= 5){
 		printf("Recuperação! \n");
-}
+	}else{
+		printf("Rerovado! \n");
+	}
+
 
 
 	printf("MEDIA: %.1f",media);
