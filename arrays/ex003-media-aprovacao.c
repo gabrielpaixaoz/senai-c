@@ -13,23 +13,25 @@ int main(){
 	int i;
 	
 	
-	
-	
-	
-	for(i = 0; i < 4; i++){
+	for(i = 0; i < SIZE; i++){
+	do{
 		printf("Elemento %i: ", i + 1);
 		scanf("%f",&numeros[i]);
+		
+	}while(numeros[i] < 0 || numeros[i] > 10);
+	
+	soma += numeros[i];
 
-		soma += numeros[i];
 	}
 	
-	
-	
-	for(i = 0; i < 4; i++){
+	for(i = 0; i < SIZE; i++){
 		printf("Nota %i: %.1f\n", i+1,numeros[i]);
 	}
 	
-	media = soma / i;
+	
+	
+	
+	media = soma / SIZE;
 	
 	
 	if(media >= 7){
