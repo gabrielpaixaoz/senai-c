@@ -8,7 +8,7 @@ int main(){
 	setlocale(LC_ALL, "");
 	
 
-	float media, soma = 0, numeros[4];
+	float media, soma = 0, numeros[SIZE];
 	char resultado[200];
 	int i;
 	
