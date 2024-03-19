@@ -11,7 +11,6 @@ int main(){
 	int i;
 	
 	for(i = 0; i < SIZE; i++){
-		do{
 		printf("Digite o %iº número: ",i + 1);
 		scanf("%i",&numero[i]);
 		
@@ -21,7 +20,6 @@ int main(){
 			numeroImpar++;
 		}
 		
-		}while(numeroPar>9999);
 		
 	}
 	
