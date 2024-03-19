@@ -14,7 +14,7 @@ int main(){
 		scanf("%i",&numero[i]);
 		
 		if(numero[i] < 0){
-			numero[i] = numero[i] - numero[i];
+			numero[i] = 0;
 		}
 }
 
