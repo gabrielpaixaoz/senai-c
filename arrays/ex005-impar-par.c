@@ -21,7 +21,7 @@ int main(){
 		}else{
 			numeroImpar++;
 		}
-		
+		//numero[i] % 2 == 0 ? numeroPar++ : numeroImpar;
 	}
 	
 	
