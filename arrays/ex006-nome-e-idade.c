@@ -10,7 +10,6 @@ int main(){
 	char nome[SIZE][200];
 	int idade[SIZE];	
 	int i;
-	int j;
 	
 	for(i = 0; i < SIZE;i++){
 		printf("Digite o nome da %iª pessoa: ",i + 1);
@@ -22,9 +21,9 @@ int main(){
 		
 	}
 	
-	for(j = 0; j < SIZE; j++){
+	for(i = 0; i < SIZE; i++){
 		fflush(stdin);
-		printf("Idade e Nome da %iª Pessoa: %s %i \n",j + 1,nome[j],idade[j]);
+		printf("Idade e Nome da %iª Pessoa: %s %i \n",i + 1,nome[i],idade[i]);
 	}
 	
 }
