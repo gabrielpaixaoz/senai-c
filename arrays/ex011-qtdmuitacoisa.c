@@ -15,14 +15,30 @@ int main(){
 		scanf("%i",&numero);
 		qtdNumero++;
 		
-		numero > 0 && numero % 2 == 0 ? qtdPositivoPar++ : qtdPositivoImpar;
+		
+		if(numero > 0 && numero % 2 == 0){
+			qtdPositivoPar++;
+		}else if(numero > 0 && numero % 2 != 0){
+			qtdPositivoImpar++;
+		}
+		
+		
+		numero > 0 ? qtdPositivo++ : qtdNegativo++;
 		
 		
 	}while(numero != 0);
 	
 	
+	
+	
+	printf("Quantidad de negativos: %i \n",qtdNegativo - 1);
+	
+	printf("Quantidade de números positivos: %i \n",qtdPositivo);
+	
 	printf("Quantidade de positivos pares: %i \n",qtdPositivoPar);
+	
 	printf("Quantidade de positivos ímpares: %i \n", qtdPositivoImpar);
+	
 	printf("Quantidade de números inseridos: %i\n",qtdNumero - 1);
 
 }
