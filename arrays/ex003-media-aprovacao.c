@@ -16,13 +16,20 @@ int main(){
 	for(i = 0; i < SIZE;i++){
 		printf("Digite o %iº Número: ",i+1);
 		scanf("%i",&numero[i]);
+		fflush(stdin);
 		qtdNumero++;
 		
 		if(numero[i] % 2 == 0){
 			qtdPar++;
-			somaPar += numero[i];
 		}else{
 			qtdImpar++;
+		}
+		
+		
+		
+		if(numero[i] % 2 == 0){
+			somaPar += numero[i];
+		}else{
 			somaImpar += numero[i];
 		}
 		
@@ -34,13 +41,12 @@ int main(){
 		if(numero[i] < menorNumero){
 			menorNumero = numero[i];
 		}
-		
-		
-		mediaPar = somaPar/qtdPar;
-		mediaImpar = somaImpar/qtdImpar;
-	}
-	
+		fflush(stdin);
 
+	}
+	fflush(stdin);
+	mediaPar = somaPar/qtdPar;
+	mediaImpar = somaImpar/qtdImpar;	
 	
 	printf("Quantidade de pares: %i \n",qtdPar);
 	printf("Quantidade de ímpares: %i \n", qtdImpar);
@@ -53,7 +59,7 @@ int main(){
 	printf("A média dos números impares é : %i \n",mediaImpar);
 	
 	
-	
+	return 0;
 	
 	
 	
